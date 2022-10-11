@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, rgba(162,246,234,1) 0%, rgba(115,174,196,1) 50%, rgba(56,96,149,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+}
+
+/* Header */
+header{
+    padding:30px;
+    margin-bottom: 30px;
+    display: flex;
+    background: linear-gradient(90deg, rgba(60,129,119,1) 0%, rgba(56,107,145,1) 50%, rgba(19,42,97,1) 100%);
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-style: italic;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+}
+
+a {
+    text-align: right;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main */
+#construct {
+    background-image: url("../images/JKHAMMER.gif");
+    background-repeat: repeat-x;
+    height: 200px;
+    width: 77%;
+    margin: auto;
+    margin-bottom: 70vh;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.storeContainer {
+    display: flex;
+    width: 100%;
+    margin-bottom: 70vh;
+}
+
+p {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+#Seattle, #Tokyo, #Dubai, #Paris, #Lima {
+    width: 18%;
+    margin-right: 1.67%;
+}
+
+#Seattle {
+    margin-left: 1.67%;
+}
+
+li {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2px;
+}

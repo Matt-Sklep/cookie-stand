@@ -54,7 +54,7 @@ StoreConstructor.prototype.calculateHourlyValues = function () {
 /*------------------------------------*/
 StoreConstructor.prototype.createTable = function () {
   this.calculateHourlyValues();
-  let section = document.getElementById('storeData');
+  let section = document.querySelector('tbody');
   let head = document.createElement('th');
   let row = document.createElement('tr');
   head.textContent = this.name;
@@ -63,17 +63,17 @@ StoreConstructor.prototype.createTable = function () {
   for (let i = 0; i < this.hourlyCookies.length; i++) {
     let cell = document.createElement('td');
     row.appendChild(cell);
-    cell.textContent = `${this.hourlyCookies[i]}`;
+    cell.textContent = this.hourlyCookies[i];
   }
   let cellTotal = document.createElement('td');
   row.appendChild(cellTotal);
-  cellTotal.textContent = `${this.storeTotal}`;
+  cellTotal.textContent = this.storeTotal;
 };
 /*------------------------------------*/
 /*--------Table Header Function-------*/
 /*------------------------------------*/
 let createHeader = function () {
-  let section = document.getElementById('hours');
+  let section = document.querySelector('thead');
   let head = document.createElement('th');
   let row = document.createElement('tr');
   head.textContent = '';
@@ -93,13 +93,12 @@ let createHeader = function () {
 /*--------Table Footer Function-------*/
 /*------------------------------------*/
 let createFooter = function () {
-  let section = document.getElementById('grandTotal');
+  let section = document.querySelector('tfoot');
   let head = document.createElement('th');
   let row = document.createElement('tr');
   head.textContent = 'Total';
   row.appendChild(head);
   section.appendChild(row);
-
   for (let i = 0; i < hoursOpen.length; i++) {
     let salesAtHour = 0;
     let cell = document.createElement('td');

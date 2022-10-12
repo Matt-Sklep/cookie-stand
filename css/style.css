@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 *{
     box-sizing: border-box;
     margin: 0;
@@ -53,28 +54,32 @@ h2 {
 }
 
 .storeContainer {
-    display: flex;
-    width: 100%;
     margin-bottom: 70vh;
 }
 
-p {
-    font-size: 1.7rem;
-    margin-bottom: 5px;
-    font-style: italic;
+#cookieTable{
+    width: 80%;
+    background-color: #189AB4;
+    border: 2px solid black;
+    padding: 2px;
+    margin: auto;
 }
 
-#Seattle, #Tokyo, #Dubai, #Paris, #Lima {
-    width: 18%;
-    margin-right: 1.67%;
-}
-
-#Seattle {
-    margin-left: 1.67%;
-}
-
-li {
-    font-size: 1.2rem;
+td {
+    border: 1px solid black;
     text-align: center;
-    margin-bottom: 2px;
+    padding-top: 13px;
+    background-color: #D4F1F4;
+}
+
+th {
+    height: 30px;
+    padding: 10px 5px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+#grandTotal td {
+    background-color: #75E6DA;
 }
